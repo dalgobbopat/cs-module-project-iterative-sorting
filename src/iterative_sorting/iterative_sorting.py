@@ -17,8 +17,8 @@ def selection_sort(arr):
         arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]
 
     return arr
-number = [5,81,45,3,67,11,43,1,12,56,99,72,69,7,77,101,1000,204,385]
-print(selection_sort(number))
+# number = [5,81,45,3,67,11,43,1,12,56,99,72,69,7,77,101,1000,204,385]
+# print(selection_sort(number))
 
 
 # TO-DO:  implement the Bubble Sort function below
@@ -30,8 +30,8 @@ def bubble_sort(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
-my_list = ['z', 'a', 'f', 'd', 'p', 'c', 'm']
-print(bubble_sort(my_list))
+# my_list = ['z', 'a', 'f', 'd', 'p', 'c', 'm']
+# print(bubble_sort(my_list))
 
 '''
 STRETCH: implement the Count Sort function below
@@ -52,6 +52,14 @@ What is the time and space complexity of the counting sort algorithm?
 '''
 def counting_sort(arr, maximum=None):
     # Your code here
+    counts = {}
+    for n in arr:
+        if n not in counts:
+            counts[n] = 0
+        counts[n] += 1
+    sorted_ = []
+    for n, count in sorted(couts.items()):
+        sorted.append(n)
 
 
     return arr
